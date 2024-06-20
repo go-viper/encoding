@@ -1,0 +1,11 @@
+go 1.21
+
+use (
+	.
+	./dotenv
+	./hcl
+	./ini
+	./javaproperties
+	./toml
+	./yaml
+)

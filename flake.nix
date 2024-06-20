@@ -26,6 +26,10 @@
 
             packages = with pkgs; [
               golangci-lint
+
+              just
+              git
+              semver-tool
             ];
 
             # https://github.com/cachix/devenv/issues/528#issuecomment-1556108767

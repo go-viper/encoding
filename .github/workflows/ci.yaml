@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         go: ["1.21", "1.22", "stable", "oldstable"]
         module: [dotenv, hcl, ini, javaproperties, toml, yaml]
@@ -25,13 +26,14 @@ jobs:
           go-version: ${{ matrix.go }}
 
       - name: Test
-        run: go test -race -v -shuffle=on ./${{ matrix.module }}...
+        run: go test -race -v -shuffle=on ./${{ matrix.module }}/...
 
   lint:
     name: Lint
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         module: [dotenv, hcl, ini, javaproperties, toml, yaml]
 

@@ -38,7 +38,7 @@ func (c Codec) Encode(v map[string]any) ([]byte, error) {
 	for _, key := range keys {
 		sectionName, keyName := "", key
 
-		lastSep := strings.LastIndex(key, ".")
+		lastSep := strings.LastIndex(key, c.keyDelimiter())
 		if lastSep != -1 {
 			sectionName = key[:(lastSep)]
 			keyName = key[(lastSep + 1):]

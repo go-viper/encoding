@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        go: ["1.21", "1.22", "stable", "oldstable"]
+        go: ["1.21", "1.22", "1.23", "1.24", "stable", "oldstable"]
         module: [dotenv, hcl, ini, javaproperties, toml, yaml]
 
     steps:
@@ -44,12 +44,12 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@3041bf56c941b39c61721a86cd11f3bb1338122a # v5.2.0
         with:
-          go-version: "1.22"
+          go-version: "1.24"
 
       - name: Lint
         uses: golangci/golangci-lint-action@971e284b6050e8a5849b72094c50ab08da042db8 # v6.1.1
         with:
-          version: v1.59.1
+          version: v1.64.5
           args: ${{ matrix.module }}
 
   dev:

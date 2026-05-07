@@ -1,9 +1,9 @@
 module github.com/go-viper/encoding/dotenv
 
-go 1.21
+go 1.21.0
 
 require (
-	github.com/spf13/cast v1.6.0
+	github.com/spf13/cast v1.10.0
 	github.com/stretchr/testify v1.9.0
 	github.com/subosito/gotenv v1.6.0
 )

@@ -1,6 +1,6 @@
 module github.com/go-viper/encoding/hcl
 
-go 1.21
+go 1.21.0
 
 require (
 	github.com/hashicorp/hcl v1.0.0

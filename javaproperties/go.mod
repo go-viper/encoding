@@ -1,10 +1,10 @@
 module github.com/go-viper/encoding/javaproperties
 
-go 1.21
+go 1.21.0
 
 require (
 	github.com/magiconair/properties v1.8.7
-	github.com/spf13/cast v1.6.0
+	github.com/spf13/cast v1.10.0
 	github.com/stretchr/testify v1.9.0
 )
 

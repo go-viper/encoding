@@ -1,9 +1,9 @@
 module github.com/go-viper/encoding/ini
 
-go 1.21
+go 1.21.0
 
 require (
-	github.com/spf13/cast v1.6.0
+	github.com/spf13/cast v1.10.0
 	github.com/stretchr/testify v1.9.0
 	gopkg.in/ini.v1 v1.67.0
 )

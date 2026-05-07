@@ -3,7 +3,7 @@ module github.com/go-viper/encoding/javaproperties
 go 1.21
 
 require (
-	github.com/magiconair/properties v1.8.7
+	github.com/magiconair/properties v1.8.10
 	github.com/spf13/cast v1.6.0
 	github.com/stretchr/testify v1.9.0
 )

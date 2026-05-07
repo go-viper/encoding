@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/spf13/cast v1.6.0
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.11.1
 	github.com/subosito/gotenv v1.6.0
 )
 

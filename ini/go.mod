@@ -4,8 +4,8 @@ go 1.21
 
 require (
 	github.com/spf13/cast v1.6.0
-	github.com/stretchr/testify v1.9.0
-	gopkg.in/ini.v1 v1.67.0
+	github.com/stretchr/testify v1.11.1
+	gopkg.in/ini.v1 v1.67.2
 )
 
 require (
